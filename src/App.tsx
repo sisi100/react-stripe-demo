@@ -117,7 +117,7 @@ function CheckoutForm(){
     const result = await stripe.confirmSetup({
       elements,
       confirmParams: {
-        return_url: 'https://localhost:3000/thanks',
+        return_url: 'http://localhost:3000/thanks',
       },
     });
     if (result.error) {
