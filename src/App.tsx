@@ -42,7 +42,7 @@ function Hello() {
       <h1>カード登録するデモ</h1>
       <Link to="/set-card">カード登録</Link>
       <p>パブリックキーの登録:
-      <input type="text" onChange={handleChange} />br
+      <input type="text" onChange={handleChange} />
       <button onClick={setClick}>ローカルストレージへ保存</button>
       </p>
     </div>
@@ -87,7 +87,7 @@ function SetCard() {
           <input type="text" onChange={handleChange} />
           <button onClick={setClick}>次へ</button>
         </p>
-        <p>※ Secretが違うと落ちます</p>
+        <p>※ clientSecret が違うと落ちます</p>
       </div>
     );
   }
